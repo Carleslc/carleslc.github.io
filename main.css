@@ -62,6 +62,17 @@
   color: #444;
 }
 
+.marketing .well {
+  display: table;
+  width: 100%;
+  overflow: scroll;
+}
+
+.marketing .well p {
+  height: 70px;
+  display: table-cell;
+  vertical-align: middle;
+}
 
 /* STICKY FOOTER
 -------------------------------------------------- */
