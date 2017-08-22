@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="google-site-verification" content="yc8RNku4noE5HPnWHTknCHghZTwm8tpY550vvTrIl_A" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -13,12 +13,17 @@
   </head>
 
   <body>
+
+    <!-- SCRIPTS -->
+
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"
             integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/0f16775bdf.js"></script>
+
+    <!-- NAVBAR -->
 
     <nav id="navbar" class="navbar navbar-default">
       <div class="container">
@@ -45,6 +50,8 @@
       </div>
     </nav>
 
+    <!-- CAROUSEL -->
+
     <div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
@@ -53,6 +60,8 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
+          <img src="http://lorempixel.com/1200/500">
+          <div id="overlay"></div>
           <div class="container">
             <div class="carousel-caption">
               <h1>Quién soy</h1>
@@ -61,6 +70,8 @@
           </div>
         </div>
         <div class="item">
+          <img src="http://lorempixel.com/1200/580">
+          <div id="overlay"></div>
           <div class="container">
             <div class="carousel-caption">
               <h1>A qué me dedico</h1>
@@ -69,6 +80,8 @@
           </div>
         </div>
         <div class="item">
+          <img src="http://lorempixel.com/1200/580">
+          <div id="overlay"></div>
           <div class="container">
             <div class="carousel-caption">
               <h1>Qué he hecho</h1>
@@ -87,70 +100,80 @@
       </a>
     </div>
 
-    <div id="news" class="container">
-      <div class="alert alert-success alert-dismissable fade in">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        <p style="font-size: large">Visita mi <b><a class="alert-link" href="https://carleslc.me/blog" target="_blank">blog</a></b>!</p>
-      </div>
-    </div>
+    <div class="content">
 
-    <div id="skills" class="container">
-      <div class="row">
-        <h1 style="text-align: center">Habilidades y Tecnologías</h1>
-      </div>
-    </div>
+      <!-- NEWS -->
 
-    <div class="marketing">
-      <div class="container">
+      <div id="news" class="container">
+        <div class="alert alert-success alert-dismissable fade in">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <p style="font-size: large">Visita mi <b><a class="alert-link" href="https://carleslc.me/blog" target="_blank">blog</a></b>!</p>
+        </div>
+      </div>
+
+      <!-- SKILLS -->
+
+      <div id="skills" class="container">
         <div class="row">
-          <div class="col-md-4">
-            <span class="glyphicon glyphicon-eye-open"></span>
-            <h2>HTML & CSS</h2>
-            <div class="well"><p>Las principales tecnologías del diseño web.</p></div>
-            <div class="progress"><div class="progress-bar progress-bar-warning" role="progressbar" title="Intermedio" aria-valuenow="2" aria-valuemin="0" aria-valuemax="3" style="width: 66%"></div></div>
-          </div>
-          <div class="col-md-4">
-            <span class="glyphicon glyphicon-flash"></span>
-            <h2>JavaScript</h2>
-            <div class="well"><p>Perfecto para añadir toda la potencia y personalización para aplicaciones web.</p></div>
-            <div class="progress"><div class="progress-bar progress-bar-warning" role="progressbar" title="Intermedio" aria-valuenow="2" aria-valuemin="0" aria-valuemax="3" style="width: 66%"></div></div>
-          </div>
-          <div class="col-md-4">
-            <span class="glyphicon glyphicon-hdd"></span>
-            <h2>RESTful APIs</h2>
-            <div class="well"><p>Una de las mejores arquitecturas para aplicaciones y servicios web.</p></div>
-            <div class="progress"><div class="progress-bar progress-bar-success" role="progressbar" title="Avanzado" aria-valuenow="3" aria-valuemin="0" aria-valuemax="3" style="width: 100%"></div></div>
+          <h1 style="text-align: center">Habilidades y Tecnologías</h1>
+        </div>
+      </div>
+
+      <div class="marketing">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <span class="glyphicon glyphicon-eye-open"></span>
+              <h2>HTML & CSS</h2>
+              <div class="well"><p>Las principales tecnologías del diseño web.</p></div>
+              <div class="progress"><div class="progress-bar progress-bar-warning" role="progressbar" title="Intermedio" aria-valuenow="2" aria-valuemin="0" aria-valuemax="3" style="width: 66%"></div></div>
+            </div>
+            <div class="col-md-4">
+              <span class="glyphicon glyphicon-flash"></span>
+              <h2>JavaScript</h2>
+              <div class="well"><p>Perfecto para añadir toda la potencia y personalización para aplicaciones web.</p></div>
+              <div class="progress"><div class="progress-bar progress-bar-warning" role="progressbar" title="Intermedio" aria-valuenow="2" aria-valuemin="0" aria-valuemax="3" style="width: 66%"></div></div>
+            </div>
+            <div class="col-md-4">
+              <span class="glyphicon glyphicon-hdd"></span>
+              <h2>RESTful APIs</h2>
+              <div class="well"><p>Una de las mejores arquitecturas para aplicaciones y servicios web.</p></div>
+              <div class="progress"><div class="progress-bar progress-bar-success" role="progressbar" title="Avanzado" aria-valuenow="3" aria-valuemin="0" aria-valuemax="3" style="width: 100%"></div></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div id="services" class="container">
-      <!-- TODO -->
-    </div>
+      <!-- SERVICES -->
 
-    <div id="contact" class="footer">
-      <div class="container">
-        <h3>Sígueme</h3>
-        <a class="btn btn-social btn-twitter" href="https://twitter.com/Carleslc" target="_blank">
-          <span class="fa fa-twitter"></span>
-          @Carleslc
-        </a>
-        <a class="btn btn-social btn-github" href="https://github.com/Carleslc" target="_blank">
-          <span class="fa fa-github"></span>
-          Carleslc
-        </a>
+      <div id="services" class="container">
+        <!-- TODO -->
       </div>
-      <div class="container">
-        <h3>Contáctame</h3>
-        <a class="btn btn-social btn-google" href="mailto:lazaro.costa.carles@gmail.com">
-          <span class="glyphicon glyphicon-envelope"></span>
-          lazaro.costa.carles@gmail.com
-        </a>
-      </div>
-      <div id="copyright" class="container">
-        <br><br>
-        <i>© 2017 Carlos Lázaro Costa</i>
+
+      <!-- CONTACT -->
+
+      <div id="contact" class="footer">
+        <hr/>
+        <div class="container">
+          <h3>Sígueme</h3>
+          <a class="btn btn-social btn-twitter" href="https://twitter.com/Carleslc" target="_blank">
+            <span class="fa fa-twitter"></span>
+            @Carleslc
+          </a>
+          <a class="btn btn-social btn-github" href="https://github.com/Carleslc" target="_blank">
+            <span class="fa fa-github"></span>
+            Carleslc
+          </a>
+          <h3>Contáctame</h3>
+          <a class="btn btn-social btn-google" href="mailto:lazaro.costa.carles@gmail.com">
+            <span class="glyphicon glyphicon-envelope"></span>
+            lazaro.costa.carles@gmail.com
+          </a>
+          <div id="copyright">
+            <br><br>
+            <i>© 2017 Carlos Lázaro Costa</i>
+          </div>
+        </div>
       </div>
     </div>
   </body>
