@@ -1,11 +1,12 @@
 /* NAVBAR
 -------------------------------------------------- */
+@import 'navbar.css';
 
 .navbar {
   margin-bottom: 0;
 }
 
-/* CUSTOMIZED CAROUSEL
+/* CAROUSEL
 -------------------------------------------------- */
 
 /* Carousel base class */
