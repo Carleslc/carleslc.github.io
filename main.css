@@ -157,6 +157,7 @@ div > #overlay {
 }
 
 .content {
+  background-color: black;
   background-image: url(images/wood-background.png);
 }
 
