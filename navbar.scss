@@ -1,12 +1,11 @@
-$bgDefault      : #e67e22;
-$bgHighlight    : #d35400;
+$bgDefault      : #321e0a;
+$bgHighlight    : saddlebrown;
 $colDefault     : #ecf0f1;
-$colHover       : #ffe6d1;
+$colHover       : #d35400;
 
 .navbar {
     margin-bottom: 0;
 }
-
 .navbar-default {
     background-color: $bgDefault;
     border-color: $bgHighlight;
@@ -16,23 +15,23 @@ $colHover       : #ffe6d1;
             color: $colHover; }}
     .navbar-nav {
         > li {
-            > a {
+            > a, p {
                 color: $colDefault;
                 &:hover, &:focus {
                     color: $colHover;   }}}
         .active {
-            > a, > a:hover, > a:focus {
+            > a, p > a:hover, > a:focus {
                 color: $colHover;
                 background-color: $bgHighlight; }}
         .open {
-            > a, > a:hover, > a:focus {
+            > a, p > a:hover, > a:focus {
                 color: $colHover;
                 background-color: $bgHighlight;
                 .caret {
                     border-top-color: $colHover;
                     border-bottom-color: $colHover; }}}
         > .dropdown {
-            > a {
+            > a, p {
                 .caret {
                     border-top-color: $colDefault;
                     border-bottom-color: $colDefault; }
