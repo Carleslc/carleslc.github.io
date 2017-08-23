@@ -154,7 +154,7 @@ div > #overlay {
 
 .content {
   background-color: #321e0a;
-  background-image: url(images/wood-background.png);
+  background-image: url(../images/wood-background.png);
 }
 
 .content h1, h2, h3, h4, h5 {

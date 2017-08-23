@@ -3,7 +3,7 @@
 }
 .navbar-default {
   background-color: #321e0a;
-  background-image: url(images/wood-background-navbar.png);
+  background-image: url(../images/wood-background-navbar.png);
   border-color: #321e0a;
 }
 .navbar-default .navbar-brand {
