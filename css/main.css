@@ -68,11 +68,12 @@
   font-size: 16px;
 }
 
-.marketing .col-md-4 .glyphicon {
-  font-size: 60px;
+.marketing .col-md-4 img {
+  height: 150px;
+  width: 150px;
   background-color: #EAEAEA;
   border-radius: 50%;
-  padding: 40px;
+  padding: 16px;
   color: #444;
   box-shadow: 0 6px 10px 0 rgba(255,215,0, 0.2), 0 8px 22px 0 rgba(255,215,0, 0.19);
 }
