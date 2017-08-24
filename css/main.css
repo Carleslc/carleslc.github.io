@@ -94,6 +94,15 @@
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 
+.basic + .tooltip > .tooltip-inner { background-color: rgb(202, 92, 84); }
+.basic + .tooltip > .tooltip-arrow { border-bottom-color: rgb(202, 92, 84); }
+
+.intermediate + .tooltip > .tooltip-inner { background-color: rgb(230, 175, 95); }
+.intermediate + .tooltip > .tooltip-arrow { border-bottom-color: rgb(230, 175, 95); }
+
+.advanced + .tooltip > .tooltip-inner { background-color: rgb(116, 181, 102); }
+.advanced + .tooltip > .tooltip-arrow { border-bottom-color: rgb(116, 181, 102); }
+
 /* STICKY FOOTER
 -------------------------------------------------- */
 

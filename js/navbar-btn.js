@@ -1,7 +1,7 @@
-var navbar_collapse = $('#portfolio-collapse-menu');
-var navbar_toggle = $("#navbar-toggle-btn");
+var navbarCollapse = $('#portfolio-collapse-menu');
+var navbarToggle = $("#navbar-toggle-btn");
 
 $(window).on('resize', function () {
-  var expanded = !navbar_toggle.is(":visible");
-  if (expanded) navbar_collapse.removeClass('in');
+  var expanded = !navbarToggle.is(":visible");
+  if (expanded) navbarCollapse.removeClass('in');
 })
