@@ -1,7 +1,3 @@
 User-Agent: *
-Allow: /blog
 Disallow: /CNAME
 Disallow: /README.md
-Disallow: /images
-Disallow: /css
-Disallow: /js
