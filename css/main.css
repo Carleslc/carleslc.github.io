@@ -107,15 +107,6 @@
 /* STICKY FOOTER
 -------------------------------------------------- */
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 0;
-}
-
 .footer,
 footer {
   position: relative;
@@ -126,7 +117,7 @@ footer {
   height: 300px;
   color: white;
   text-shadow: 1px 1px 1px black;
-  background-color: rgba(0, 0, 0, 0.40);
+  background-color: rgba(0, 0, 0, 0.50);
 }
 
 .footer hr {
@@ -153,6 +144,16 @@ footer {
 /* OTHER CSS
 -------------------------------------------------- */
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: #132442;
+  margin-bottom: 0;
+}
+
 div > #overlay {
   position: absolute;
   top: 0;
@@ -164,10 +165,35 @@ div > #overlay {
 
 .content {
   background-color: #321e0a;
-  background-image: url(../images/wood-background.png);
+  background-image: url(../images/digital-wallpaper.png);
+}
+
+.shadowed {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.30);
 }
 
 .content h1, h2, h3, h4, h5 {
   color: white;
   text-shadow: 1px 1px 1px black;
+}
+
+.content h1 {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.alert > .alert-content {
+  font-size: large;
+}
+
+.center {
+  text-align: center;
+}
+
+.margin-top {
+  margin-top: 30px;
 }

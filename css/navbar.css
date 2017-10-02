@@ -1,51 +1,48 @@
 .navbar {
-  margin-bottom: 0;
+  margin-bottom: 1px;
 }
 .navbar-default {
-  background-color: #321e0a;
-  background-image: url(../images/wood-background-navbar.png);
-  border-color: #321e0a;
+  background-color: #132442;
+  border-color: transparent;
 }
 .navbar-default .navbar-brand {
-  color: #ecf0f1;
+  color: white;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: brown;
+  color: rgb(90, 202, 250);
 }
 .navbar-default .navbar-nav > li > a {
-  color: #ecf0f1;
+  color: white;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: brown;
+  color: rgb(90, 202, 250);
 }
 .navbar-default .navbar-nav .active > a, .navbar-default .navbar-nav .active > a:hover, .navbar-default .navbar-nav .active > a:focus {
-  color: brown;
-  background-color: #321e0a;
+  color: rgb(90, 202, 250);
 }
 .navbar-default .navbar-nav .open > a, .navbar-default .navbar-nav .open > a:hover, .navbar-default .navbar-nav .open > a:focus {
-  color: brown;
-  background-color: #321e0a;
+  color: rgb(90, 202, 250);
 }
 .navbar-default .navbar-nav .open > a .caret, .navbar-default .navbar-nav .open > a:hover .caret, .navbar-default .navbar-nav .open > a:focus .caret {
-  border-top-color: brown;
-  border-bottom-color: brown;
+  border-top-color: rgb(90, 202, 250);
+  border-bottom-color: rgb(90, 202, 250);
 }
 .navbar-default .navbar-nav > .dropdown > a .caret {
-  border-top-color: #ecf0f1;
-  border-bottom-color: #ecf0f1;
+  border-top-color: rgb(90, 202, 250);
+  border-bottom-color: rgb(90, 202, 250);
 }
 .navbar-default .navbar-nav > .dropdown > a:hover .caret, .navbar-default .navbar-nav > .dropdown > a:focus .caret {
-  border-top-color: brown;
-  border-bottom-color: brown;
+  border-top-color: rgb(90, 202, 250);
+  border-bottom-color: rgb(90, 202, 250);
 }
 .navbar-default .navbar-toggle {
-  border-color: brown;
+  border-color: rgb(90, 202, 250);
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: brown;
+  background-color: rgb(90, 202, 250);
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #ecf0f1;
+  background-color: white;
 }
 .navbar-btn {
   padding-left: 5px;
@@ -75,10 +72,10 @@
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #ecf0f1;
+    color: white;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: brown;
-    background-color: #321e0a;
+    color: transparent;
+    background-color: white;
   }
 }
