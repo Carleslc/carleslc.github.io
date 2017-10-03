@@ -150,7 +150,7 @@ html {
 }
 
 body {
-  background-color: #132442;
+  background-color: rgb(85, 83, 75);
   margin-bottom: 0;
 }
 
@@ -164,8 +164,8 @@ div > #overlay {
 }
 
 .content {
-  background-color: #321e0a;
-  background-image: url(../images/digital-wallpaper.png);
+  background-color: cornsilk;
+  /*background-image: url(../images/digital-wallpaper.png);*/
 }
 
 .shadowed {
