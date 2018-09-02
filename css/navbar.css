@@ -1,45 +1,53 @@
 .navbar {
   margin-bottom: 1px;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar-overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 .navbar-default {
-  background-color: rgb(85, 83, 75);
   border-color: transparent;
 }
 .navbar-default .navbar-brand {
+  cursor: pointer;
   color: white;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: rgb(178, 174, 157);
+  color: white;
 }
 .navbar-default .navbar-nav > li > a {
   color: white;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: rgb(178, 174, 157);
+  color: transparent;
 }
 .navbar-default .navbar-nav .active > a, .navbar-default .navbar-nav .active > a:hover, .navbar-default .navbar-nav .active > a:focus {
-  color: rgb(178, 174, 157);
+  color: transparent;
 }
 .navbar-default .navbar-nav .open > a, .navbar-default .navbar-nav .open > a:hover, .navbar-default .navbar-nav .open > a:focus {
-  color: rgb(178, 174, 157);
+  color: transparent;
 }
 .navbar-default .navbar-nav .open > a .caret, .navbar-default .navbar-nav .open > a:hover .caret, .navbar-default .navbar-nav .open > a:focus .caret {
-  border-top-color: rgb(178, 174, 157);
-  border-bottom-color: rgb(178, 174, 157);
+  border-top-color: transparent;
+  border-bottom-color: transparent;
 }
 .navbar-default .navbar-nav > .dropdown > a .caret {
-  border-top-color: rgb(178, 174, 157);
-  border-bottom-color: rgb(178, 174, 157);
+  border-top-color: transparent;
+  border-bottom-color: transparent;
 }
 .navbar-default .navbar-nav > .dropdown > a:hover .caret, .navbar-default .navbar-nav > .dropdown > a:focus .caret {
-  border-top-color: rgb(178, 174, 157);
-  border-bottom-color: rgb(178, 174, 157);
+  border-top-color: transparent;
+  border-bottom-color: transparent;
 }
 .navbar-default .navbar-toggle {
-  border-color: rgb(178, 174, 157);
+  border-color: transparent;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: rgb(178, 174, 157);
+  background-color: transparent;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: white;
