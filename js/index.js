@@ -45,6 +45,7 @@ $(document).ready(function() {
     }).fail(function(xhr, status, error) {
       $('#contact-success').addClass('hidden');
       $('#contact-error').removeClass('hidden');
+      console.warn(xhr.responseText);
     }).always(function() {
       $('.footer').height(600);
       scrollToBottom();
