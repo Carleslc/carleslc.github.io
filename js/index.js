@@ -30,9 +30,8 @@ $(document).ready(function() {
     }
   });
 
-  // CONTACT FORM
-  $('#contact-form').submit(function(e) {
-    e.preventDefault();
+  // CONTACT FORM with AJAX -- Gold account only :(
+  /*$('#contact-form').submit(function(e) {
     $.ajax({
       url: "https://formspree.io/lazaro.costa.carles@gmail.com",
       method: "POST",
@@ -50,10 +49,6 @@ $(document).ready(function() {
       $('.footer').height(600);
       scrollToBottom();
     });
-  });
-
-  $('#close').click(function() {
-    $('#contact-success').addClass('hidden');
-  });
+  });*/
 
 });

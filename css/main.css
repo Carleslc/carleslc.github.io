@@ -43,7 +43,7 @@
 
 .go-down {
   position: absolute;
-  top: 600px;
+  top: 80vh;
   left: 50%;
   color: white;
   font-size: 40px;

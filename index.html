@@ -157,25 +157,22 @@
           </div>
           <div class="margin-top row">
             <h3 class="white">Contáctame</h3>
-            <!--<a class="btn btn-social btn-google" href="mailto:lazaro.costa.carles@gmail.com">
-              <span class="glyphicon glyphicon-envelope"></span>
-              lazaro.costa.carles@gmail.com
-            </a>-->
-            <form id="contact-form">
+            <form action="https://formspree.io/lazaro.costa.carles@gmail.com"
+                  method="POST" id="contact-form">
               <div class="container">
                   <input class="form-control" placeholder="Nombre" type="text" name="name" required>
-                  <input class="form-control" placeholder="Email" type="email" name="email" required>
+                  <input class="form-control" placeholder="Email" type="email" name="_replyto" required>
                   <textarea class="form-control" rows="5" placeholder="Tu mensaje" type="text" name="message"></textarea>
               </div>
-              <input class="btn btn-dark" type="submit" id="submit" value=SUBMIT>
+              <input class="btn btn-dark" type="submit" id="submit" value="Send">
             </form>
           </div>
-          <div id="contact-error" class="alert alert-danger hidden fade in">
+          <!--<div id="contact-error" class="alert alert-danger hidden fade in">
             <p class="alert-content center thin"><i>Ha ocurrido un error enviando el mensaje. Por favor, envia tu mensaje al correo <a href="mailto:lazaro.costa.carles@gmail.com"><b>lazaro.costa.carles@gmail.com</b></a> indicando lo sucedido.</i></p>
           </div>
           <div id="contact-success" class="alert alert-success hidden fade in">
             <p class="alert-content center thin">Se ha enviado tu mensaje. ¡Gracias!</p>
-          </div>
+          </div>-->
           <div class="margin-top">
             <i class="copyright thin">Carlos Lázaro Costa © <span id="copyright-year"></span></i>
           </div>
