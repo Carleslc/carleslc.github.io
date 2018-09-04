@@ -52,7 +52,9 @@ $(document).ready(function() {
         return '';
       },
       category: function(entry, tokens) {
-        return tokens.tags[0];
+        if (tokens.categories && tokens.categories.length > 0) {
+          return tokens.categories[0];
+        }
       }
     },
     error: function() {

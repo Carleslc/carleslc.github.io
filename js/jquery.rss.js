@@ -306,6 +306,7 @@
       entry.contentSnippet = entry.summary;
       extraTokens = {
         tags: entry.tags,
+        categories: entry.categories,
         image: entry.image,
         banner: entry.banner_image
       };
