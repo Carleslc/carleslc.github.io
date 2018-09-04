@@ -33,24 +33,9 @@
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/0f16775bdf.js"></script>
+    <script src="js/jquery.rss.js"></script>
 
-    <!-- CAROUSEL -->
-
-    <!--<div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="images/me.jpg">
-          <div id="overlay"></div>
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>¡Hola!</h1>
-              <p>Soy Carlos, desarrollador Full-Stack especializado en Ingeniería del Software.</p>
-              <p>Tengo experiencia en gestión de proyectos, aplicaciones móviles Android, APIs REST, páginas web, videojuegos, machine learning y chatbots.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>-->
+    <!-- HOME -->
 
     <div id="home">
       <div id="overlay-header"></div>
@@ -59,7 +44,7 @@
         <p style="color: #FCF3CF">Soy Carlos, desarrollador Full-Stack especializado en Ingeniería del Software.</p>
         <p>Tengo experiencia en gestión de proyectos, aplicaciones móviles Android, APIs REST, páginas web, videojuegos, machine learning y chatbots.</p>
       </div>
-      <span class="page-link go-down" dest="content"><i class="lni-chevron-down" aria-hidden="true"></i></span>
+      <span class="page-link go-down" dest="content" offset="false"><i class="lni-chevron-down" aria-hidden="true"></i></span>
     </div>
 
     <!-- NAVBAR -->
@@ -77,14 +62,14 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <span class="navbar-brand page-link" dest="home"><b>Carlos Lázaro Costa</b></a>
+            <span class="navbar-brand page-link" dest="home" offset="false">Carlos Lázaro Costa</span>
           </div>
 
           <div class="collapse navbar-collapse" id="portfolio-collapse-menu">
             <ul class="nav navbar-nav navbar-left">
-              <li><p class="navbar-btn"><span class="btn page-link" dest="content">Experiencia</span></p></li>
+              <li><p class="navbar-btn"><span class="btn page-link" dest="content" offset="false">Blog</a></p></li>
+              <li><p class="navbar-btn"><span class="btn page-link" dest="skills">Experiencia</span></p></li>
               <li><p class="navbar-btn hidden"><span class="btn page-link" dest="projects">Proyectos</span></p></li>
-              <li><p class="navbar-btn"><a class="btn" href="https://blog.carleslc.me/" target="_blank">Blog</a></p></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><p class="navbar-btn"><span class="btn page-link" dest="contact">Contacto</span></p></li>
@@ -93,20 +78,31 @@
         </div>
       </nav>
 
-      <!-- TODO: Blog Feed -->
+      <!-- BLOG FEED -->
+
+      <section id="blog-feed" class="container">
+        <div class="row">
+          <h1>Blog</h1>
+        </div>
+        <div class="row">
+          <i><p id="blog-description"></p></i>
+        </div>
+        <div id="rss-feeds" class="row"></div>
+        <div class="row center">
+          <a id="blog-button" href="#" target="_blank" class="btn btn-warning btn-lg margin-top">Ir al Blog <span class="fa fa-hand-o-right"></span></a>
+        </div>
+      </section>
 
       <!-- SKILLS -->
 
-      <div id="skills" class="container">
+      <hr/>
+      <section id="skills" class="container">
         <div class="row">
           <h1>Habilidades y Tecnologías</h1>
         </div>
-        <div class="margin-top alert alert-warning">
-          <p class="alert-content center"><b>Sección en construcción</b><br></br>De momento puedes ver mis aptitudes en mi perfil de <a href="https://www.linkedin.com/in/carlos-lázaro-costa-31b4a3150" target="_blank">linkedin</a> 😉</p>
+        <div class="row alert alert-warning">
+          <p class="alert-content center"><b>Sección en construcción</b><br></br>También puedes ver mis aptitudes en mi perfil de <a href="https://www.linkedin.com/in/carlos-lázaro-costa-31b4a3150" target="_blank">linkedin</a> 😉</p>
         </div>
-      </div>
-
-      <div>
         <div class="container center">
           <div class="row">
             <div class="col-md-4">
@@ -123,17 +119,20 @@
             </div>
           </div>
         </div>
-      </div>
+        <div class="row center">
+          <a id="blog-button" href="./cv_es.pdf" download="carlos-lazaro-costa-cv.pdf" class="btn btn-info btn-lg margin-top">Descargar CV <span class="fa fa-file-pdf-o"></span></a>
+        </div>
+      </section>
 
       <script type="text/javascript">$('[data-toggle="tooltip"]').tooltip();</script>
 
       <!-- PROJECTS -->
 
-      <div id="projects" class="container hidden">
+      <section id="projects" class="container hidden">
         <div class="row">
           <h1>Proyectos</h1>
         </div>
-      </div>
+      </section>
 
       <!-- CONTACT -->
 
