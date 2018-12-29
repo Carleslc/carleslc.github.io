@@ -41,17 +41,17 @@ $(document).ready(function() {
     limit: 4,
     ssl: true,
     host: '',
-    layoutTemplate: '<div class="feed-container container"><div class="row"><div class="col col-xs-12"><div class="blog-grids">{entries}</div></div></div></div>',
-    entryTemplate: '<div id="entry-{index}" class="feed-entry grid"><div class="entry-media">{entryImage}</div><div class="entry-body"><span class="cat">{category}</span><h3><a id="link-entry-{index}" href="{url}" target="_blank">{title}</a></h3><p>{shortBody}</p></div></div>',
+    layoutTemplate: '<div class="grid center">{entries}</div>',
+    entryTemplate: '<div id="entry-{index}" class="feed-entry grid-element"><div class="entry-media">{entryImage}</div><div class="entry-body"><span class="cat">{category}</span><h3><a id="link-entry-{index}" href="{url}" target="_blank">{title}</a></h3><p>{shortBody}</p></div></div>',
     effect: 'show', // valid values: 'show', 'slide', 'slideFast', 'slideSynced', 'slideFastSynced'
     tokens: {
-      entryImage: function(entry, tokens) {
+      entryImage: function(_entry, tokens) {
         if (tokens.banner) {
           return `<img src="${tokens.banner}"/>`;
         }
         return '';
       },
-      category: function(entry, tokens) {
+      category: function(_entry, tokens) {
         if (tokens.categories && tokens.categories.length > 0) {
           return tokens.categories[0];
         }
@@ -62,7 +62,7 @@ $(document).ready(function() {
       console.warn(this);
     },
     success: function() {
-      var grids = $('.blog-grids');
+      var grid = $('.grid');
       $('div.feed-entry')
       .click(function() {
         window.open($(`#link-${$(this).attr('id')}`).attr('href'), '_blank');
@@ -70,12 +70,12 @@ $(document).ready(function() {
       .mouseenter(function() {
         $(this).css('box-shadow', '0 0 30px rgba(0, 0, 0, 0.2)');
         $(`#link-${$(this).attr('id')}`).toggleClass("hovered");
-        grids.children().not(this).fadeTo(0, 0.5);
+        grid.children().not(this).fadeTo(0, 0.5);
       })
       .mouseleave(function() {
         $(this).css('box-shadow', '0 0 30px rgba(0, 0, 0, 0.1)');
         $(`#link-${$(this).attr('id')}`).toggleClass("hovered");
-        grids.children().fadeTo(0, 1);
+        grid.children().fadeTo(0, 1);
       });
     },
     onData: function() {
