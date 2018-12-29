@@ -130,11 +130,11 @@ div.feed-entry {
   margin: 3px 0 0.73em;
 }
 
-.entry-body h3 a {
+.entry-body h3 p {
   color: #252934cb;
 }
 
-.entry-body h3 a:hover, .entry-body h3 .hovered {
+.entry-body h3 p:hover, .entry-body h3 .hovered {
   color: #252934;
   text-decoration: none;
 }

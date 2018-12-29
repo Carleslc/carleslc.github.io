@@ -42,7 +42,7 @@ $(document).ready(function() {
     ssl: true,
     host: '',
     layoutTemplate: '<div class="grid center">{entries}</div>',
-    entryTemplate: '<div id="entry-{index}" class="feed-entry grid-element"><div class="entry-media">{entryImage}</div><div class="entry-body"><span class="cat">{category}</span><h3><a id="link-entry-{index}" href="{url}" target="_blank">{title}</a></h3><p>{shortBody}</p></div></div>',
+    entryTemplate: '<div id="entry-{index}" class="feed-entry grid-element"><div class="entry-media">{entryImage}</div><div class="entry-body"><span class="cat">{category}</span><h3><p id="link-entry-{index}" href="{url}">{title}</p></h3><p>{shortBody}</p></div></div>',
     effect: 'show', // valid values: 'show', 'slide', 'slideFast', 'slideSynced', 'slideFastSynced'
     tokens: {
       entryImage: function(_entry, tokens) {
