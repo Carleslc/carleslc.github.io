@@ -37,7 +37,7 @@ $(document).ready(function() {
 
   // BLOG FEED
 
-  $.getJSON("https://blog.carleslc.me/ghost/api/v3/content/posts/?key=c0a217e701348212fbbf260848&limit=4&order=published_at%20desc&include=tags", function callback(data) {
+  $.getJSON("https://blog.carleslc.me/ghost/api/v3/content/posts/?key=17b7406271539059e309a77ed7&limit=4&order=published_at%20desc&include=tags", function callback(data) {
     var posts = data.posts;
     
     var content = '<div class="grid center">';
